@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>TheDocs - </title>
+
+    <!-- Styles -->
+    <link href="../assets/css/theDocs.all.min.css" rel="stylesheet">
+    <link href="../assets/css/custom.css" rel="stylesheet">
+    <link href="../assets/css/skin/skin-dark.css" rel="stylesheet">
+
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,300,400,500%7CLato:300,400' rel='stylesheet'
+          type='text/css'>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon.png">
+</head>
+
+<body>
+
+<header class="site-header sticky">
+
+    <!-- Top navbar & branding -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+
+            <!-- Toggle buttons and brand -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="true" aria-controls="navbar">
+                    <span class="glyphicon glyphicon-option-vertical"></span>
+                </button>
+
+                <button type="button" class="navbar-toggle for-sidebar" data-toggle="offcanvas">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="index.html"><img src="../assets/img/admost_logo.png" alt="logo"></a>
+            </div>
+            <!-- END Toggle buttons and brand -->
+
+            <!-- Top navbar -->
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="true" role="banner">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a>Documentation</a></li>
+                    <li><a href="http://dashboard.admost.com">Dashboard</a></li>
+
+                    <li class="hero"><a
+                            href="https://github.com/admost/AMR/"><i
+                            class="fa fa-github"></i>&nbsp;&nbsp;Github</a></li>
+                </ul>
+            </div>
+            <!-- END Top navbar -->
+
+        </div>
+    </nav>
+    <!-- END Top navbar & branding -->
+
+</header>
+<main class="container">
+    <div class="row">
+
+        <!-- Sidebar -->
+        <aside class="col-md-3 col-sm-3 sidebar">
+
+            <ul class="nav sidenav dropable sticky">
+                <li>
+                    <a class="active" href="setup-guide">Setup Guide</a>
+                    <ul>
+                        <li><a href="#setup-your-application">Setup your application</a></li>
+                        <li><a href="#select-your-ad-networks">Select your ad networks</a></li>
+                        <li><a href="#create-your-ad-zones">Create your ad zones</a></li>
+                        <li><a href="#create-ad-placement">Create ad placement</a></li>
+                        <li><a href="#reporting-api">Reporting API permissions and Initiation Values</a></li>
+                        <li><a href="#integration-part">Integration Part</a></li>
+                    </ul>
+                </li>
+                <li><a href="#faq">F.A.Q.</a></li>
+            </ul>
+
+        </aside>
+        <!-- END Sidebar -->
+
+
+        <!-- Main content -->
+        <article class="col-md-9 col-sm-9 main-content" role="main">
+
+            <header>
+
+                <ol class="toc">
+                    <li>
+                        <a href="#setup-guide">Setup Guide</a>
+                        <ol>
+                            <li><a href="#setup-your-application">Setup your application</a></li>
+                            <li><a href="#select-your-ad-networks">Select your ad networks</a></li>
+                            <li><a href="#create-your-ad-zones">Create your ad zones</a></li>
+                            <li><a href="#create-ad-placement">Create ad placement</a></li>
+                            <li><a href="#reporting-api">Reporting API permissions and Initiation Values</a></li>
+                            <li><a href="#integration-part">Integration Part</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#faq">F.A.Q.</a></li>
+                </ol>
+            </header>
+
+
+            <section>
+                <h2 id="setup-guide">Setup Guide</h2>
+                <h3 id="setup-your-application">Setup your application</h3>
+                <p>Click on “New App” from “My Apps” screen.</p>
+
+                <img class="img-responsive img-shadow center-block" src="../assets/img/1-1-1.png">
+
+                <br>
+
+                <img class="img-responsive img-shadow center-block" src="../assets/img/1-1-2.png">
+
+                <br>
+
+                <p>Fill your application's name, platform and package name and select “OK”.</p>
+
+                <h3 id="select-your-ad-networks">Select your ad networks</h3>
+
+                <p>Click on “Ad Network” tab from left menu to choose and activate your networks.
+                    Each network may have different account and reporting API activation, check out each of the network setup documentation
+                </p>
+
+                <img class="img-responsive img-shadow center-block" src="../assets/img/1-2-1.png">
+
+                <br>
+
+                <img class="img-responsive img-shadow center-block" src="../assets/img/1-2-2.png">
+
+                <br>
+
+                <h3 id="create-your-ad-zones">Create your ad zones</h3>
+
+                <p>
+
+                    Zones are the group of placements, where you added same type of ad placements and specified the
+                    location of the ad zone in your application. Creating different ad zones for each zone in your
+                    application would be crucial your optimization.
+                    Select your app and click on “Zone” to create your first zone.
+
+                </p>
+
+                <img class="img-responsive img-shadow center-block" src="../assets/img/1-3-1.png">
+                <br>
+                <img class="img-responsive img-shadow center-block" src="../assets/img/1-3-2.png">
+                <br>
+                <ul>
+                    <li>
+                        <p><samp>Name:</samp> Pay attention to entitle related zone names. Defining zones with size, ad
+                            type, position will be helpful for tracking</p>
+                        <small>For instance: “Banner Bottom (320x50)” , “Interstitial - Game Over”, “Rewarded Video -
+                            Free Coins” etc.
+                        </small>
+                    </li>
+
+                    <li>
+                        <p>You should select <samp>banner</samp> as a type for banner and native ad types, and
+                            “fullscreen” as a type for static/ video interstitial and video ad types. </p>
+                    </li>
+
+                    <li>
+                        <p><samp>Type:</samp> Select banner as a type for native and banner ad zones, and fullscreen for
+                            interstitial and rewarded.</p>
+                    </li>
+
+                    <li>
+                        <p><samp>Height:</samp> Zone height is only valid for banner type. Please ignore height option
+                            for fullscreen zone types.</p>
+                    </li>
+
+                    <li>
+                        <p><samp>Daily/ hourly capping:</samp> You can set daily and/or hourly capping to ad zones. Each
+                            capping adjustment is valid per user. </p>
+                    </li>
+
+                    <li>
+                        <p><samp>Impression Interval:</samp> Impression interval is the time period adjustment between
+                            two impression. The interval unit is in seconds(sec.). Genarally applicable with rewarded
+                            video and interstitial ad zones. </p>
+                    </li>
+
+                    <li>
+                        <p><samp>Refresh Interval:</samp> The refresh period of request in seconds. </p>
+                        <small>For instance, if the refresh interval is 30 second, the zone makes a new request in every
+                            30 seconds. Applicable for banner and native ad zones.
+                        </small>
+
+                    </li>
+
+                </ul>
+
+
+                <h3 id="create-ad-placement">Create ad placement</h3>
+
+                <p>You have to fill zones with ad placements, placements have to be compatible with the zone types. Add
+                    banner and natives to “Banner” type zone and videos and interstitial to “fullscreen” type zone is
+                    valid.
+
+                </p>
+
+                <p>Select your zone and click on “Placement” to create your first placement.</p>
+                <br>
+                <img class="img-responsive img-shadow center-block" src="../assets/img/1-4-1.png">
+                <br>
+                <ul>
+
+                    <li>
+                        <p><samp>Select your network</samp> (Only activated networks (Step-2) would be seen)</p>
+                    </li>
+
+                    <li>
+                        <p><samp>Name: </samp> Entitling related names to the placements would be helpful for tracking.</p>
+                    </li>
+
+                    <li>
+                        <p><samp>Type: </samp> Select related type to your placement. Choosing right format of your placements is crucial.</p>
+
+                        <div class="callout callout-warning" role="alert">
+                            <h4>Important: </h4>
+                            <p>Admob Native type must be selected as “native install” type.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <p><samp>AdSpace ID: </samp> Each placement and network’s AdSpace ID is unique and varied. Please pay attention to the account setup documents to find out the Adspace IDs’ for each network.</p>
+                    </li>
+
+
+                    <li>
+                        <p><samp>AdSpace Report ID: </samp> Each placement and network’s AdSpace Report ID is unique and varied. Please pay attention to the account setup documents to find out the Adspace Report IDs’ for each network. ( Some networks may not have a reporting API, where the publisher should upload manually for optimization. Please avoid Report ID field for these networks.
+                        </p>
+                    </li>
+
+
+                </ul>
+
+                <div class="callout callout-info" role="alert">
+                    <h4>Note: </h4>
+                    <p>You can add each placement to multiple related ad zones, though we highly recommend to create new ad placement for each zone for optimal evaluation and reporting.
+
+                    </p>
+
+                    <p>                        You can list, edit and delete all of your placements from “Placements” tab next to the app.
+                    </p>
+                </div>
+                <img class="img-responsive img-shadow center-block" src="../assets/img/1-4-2.png">
+                <br>
+                <img class="img-responsive img-shadow center-block" src="../assets/img/1-4-3.png">
+                <br>
+                <p>Each ad placement has unique AdSpace and Reporting ID, where you cannot add multiple ID’s to different placements. </p>
+
+
+
+                <h3 id="reporting-api">Reporting API permissions and Initiation Values</h3>
+
+                <p>Some networks may have values to initiate due to the platform.
+                </p>
+                <p>    For Initiate an ad network, click on “Networks” tab next to your app.
+
+                </p>
+                <br>
+                <img class="img-responsive img-shadow center-block" src="../assets/img/1-5-1.png">
+                <br>
+
+                <p>    Enter the init parameters by filling the required areas.
+
+
+                </p>
+                <p>    Reporting Credentials for this part is not necessary to fill.
+
+                </p>
+                <br>
+                <img class="img-responsive img-shadow center-block" src="../assets/img/1-5-2.png">
+
+
+
+                <h3 id="integration-part">Integration Part</h3>
+
+                <p>Do not forget to get your <code>&lt;ADMOST_APP_ID&gt;</code> and <code>&lt;ZONE_ID&gt;</code> from
+                    the dashboard next to your app and zones respectively to add in your code. </p>
+
+
+            </section>
+
+            <section>
+                <h2 id="faq">Frequently Asked Question</h2>
+                <div class="faq">
+                    <input class="faq-search" type="text" placeholder="Type to search...">
+
+                    <ul>
+                        <li>
+                            <h6>How can I add new tester? What is the “ID” of new tester?</h6>
+                            <div>
+                                <p>You can add new tester from the Testers tab. Enter name and ID as “Advertising ID” of your devices. </p>
+
+                                <br>
+                                <img class="img-responsive img-shadow center-block" src="../assets/img/faq-1-1.png">
+                                <br>
+
+
+                                <p>For iOS, it can be found from any Identifier apps. Please make sure Limit Ad Tracking is off from Settings → Privacy → Advertising → Limit Ad Tracking
+                                </p>
+
+                                <br>
+                                <img class="img-responsive img-shadow center-block" src="../assets/img/faq-1-2.png">
+                                <br>
+
+                                <p>For Android, Open Settings → Google → Ads → Take “Advertising ID”.</p>
+
+                            </div>
+                        </li>
+                        <li>
+                            <h6>
+                                What are the roles of admin types?
+                            </h6>
+                            <div><p>There are three types of admin:</p>
+                            <ul>
+                                <li>
+                                    <p> <samp>Report </samp>can see only the data of the apps.</p>
+                                </li>
+                                <li>
+                                    <p> <samp>Admin </samp>can see data also add ad network and manage them (priority, hourly capping, daily capping and geo selection)</p>
+                                </li>
+                                <li>
+                                    <p> <samp>Super Admin </samp>can see data, manage ad networks and also determine who can access dashboard and admin type (report or admin)</p>
+                                </li>
+                            </ul>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <h6>
+                                If I forgot my password, how can I reset it?
+                            </h6>
+                            <div><p>You can change your password with “Forgot password” option on dashboard entrance page. </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </article>
+        <!-- END Main content -->
+    </div>
+</main>
+
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <a id="scroll-up" href="#"><i class="fa fa-angle-up"></i></a>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <p>Copyright &copy; 2017. All right reserved</p>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <ul class="footer-menu">
+                    <li><a href="page_changelog.html">Changelog</a></li>
+                    <li><a href="page_credits.html">Credits</a></li>
+                    <li><a href="mailto:support@thetheme.io">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END Footer -->
+
+<!-- Scripts -->
+<script>
+    window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')
+</script>
+<script src="../assets/js/theDocs.all.min.js"></script>
+<script src="../assets/js/custom.js"></script>
+
+</body>
+</html>
