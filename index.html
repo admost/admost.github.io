@@ -28,7 +28,7 @@
 
 <body>
 
-<header class="site-header">
+<header class="site-header sticky">
 
     <!-- Top navbar & branding -->
     <nav class="navbar navbar-default">
@@ -41,18 +41,25 @@
                     <span class="glyphicon glyphicon-option-vertical"></span>
                 </button>
 
-                <a class="navbar-brand" href="index.html">Admost Mediation Router</a>
+                <button type="button" class="navbar-toggle for-sidebar" data-toggle="offcanvas">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="http://admost.github.io/"><img src="assets/img/admost_logo.png" alt="logo"></a>
             </div>
             <!-- END Toggle buttons and brand -->
 
             <!-- Top navbar -->
             <div id="navbar" class="navbar-collapse collapse" aria-expanded="true" role="banner">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a target="_blank" href="http://dashboard.admost.com"><i
-                            class="fa fa-bar-chart"></i>&nbsp;&nbsp;Dashboard</a></li>
+                    <li class="active"><a>Introduction</a></li>
+                    <li><a target="_blank" href="http://admost.com"><i
+                            class="fa fa-chrome"></i>&nbsp;&nbsp;Web</a></li>
                     <li class="hero"><a
-                            href="https://github.com/admost/AMR/"><i
-                            class="fa fa-github"></i>&nbsp;&nbsp;Github</a></li>
+                            target="_blank" href="http://dashboard.admost.com"><i
+                            class="fa fa-dashboard"></i>&nbsp;&nbsp;Dashboard</a></li>
                 </ul>
             </div>
             <!-- END Top navbar -->
