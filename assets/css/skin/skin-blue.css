@@ -47,24 +47,24 @@ h3 a:before,
 .pagination > .active > span,
 .pagination > .active > span:focus,
 .pagination > .active > span:hover {
-  background-color: #62a8ea;
+  background-color: #5E31C1;
 }
 
 .carousel.indicators-out .carousel-indicators li {
-  border-color: #62a8ea;
+  border-color: #5E31C1;
 }
 
 .tabs-text .nav-tabs > li.active {
-  border-bottom-color: #62a8ea;
+  border-bottom-color: #5E31C1;
 }
 
 .grid-view li {
-  border-top-color: #62a8ea;
+  border-top-color: #5E31C1;
 }
 
 @media screen and (max-width: 767px) {
   .navbar {
-    background-color: #62a8ea !important;
+    background-color: #5E31C1 !important;
   }
 }
 
